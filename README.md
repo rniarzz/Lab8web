@@ -18,26 +18,26 @@
 #### Untuk memulai membuat aplikasi CRUD sederhana, yang perlu disiapkan adalah database server menggunakan MySQL. Pastikan MySQL Server sudah dapat dijalankan melalui XAMPP.
 #### Menjalankan MySQL Server Untuk menjalankan MySQL Server dari menu XAMPP Contol.
 
-### Menjalankan MySQL Server
-## Untuk menjalankan MySQL Server dari menu XAMPP Contol.
+## Menjalankan MySQL Server
+### Untuk menjalankan MySQL Server dari menu XAMPP Contol.
 
 ![Screenshot (502)](https://github.com/rniarzz/Lab8web/assets/115542704/96f742d7-8b8e-4a59-a28a-7382ea1329f5)
 
-### Mengakses MySQL Client menggunakan PHP MyAdmin
+## Mengakses MySQL Client menggunakan PHP MyAdmin
 
 ## Pastikan webserver Apache dan MySQL server sudah dijalankan. Kemudian buka melalui browser: http://localhost/phpmyadmin/
 
-### Membuat Database: Studi Kasus Data Barang
+## Membuat Database: Studi Kasus Data Barang
 
 ![image](https://github.com/rniarzz/Lab8web/assets/115542704/d6e74f09-2069-4870-94cf-88a5856e70ea)
 
-### Membuat Database
+## Membuat Database
 
 ```php
 CREATE DATABASE latihan1;
 ```
 
-### Membuat Tabel
+## Membuat Tabel
 
 ```php
 CREATE TABLE data_barang (
@@ -53,7 +53,7 @@ CREATE TABLE data_barang (
 
 ![Screenshot (505)](https://github.com/rniarzz/Lab8web/assets/115542704/bb0a5dc3-74af-4ac3-825b-37ab10810446)
 
-### Menambahkan Data
+## Menambahkan Data
 
 ```php
 INSERT INTO data_barang (kategori, nama, gambar, harga_beli, harga_jual, stok)
@@ -64,8 +64,8 @@ VALUES ('Elektronik', 'HP Samsung Android', 'hp_samsung.jpg', 2000000, 2400000, 
 
 ![lab4](https://github.com/rniarzz/Lab8web/assets/115542704/4eac4ae1-8b0f-4a1c-b4f3-6efd55b0e451)
 
-### Membuat Program CRUD
-## Buat folder lab8_php_database pada root directory web server (c:\xampp\htdocs)
+## Membuat Program CRUD
+### Buat folder lab8_php_database pada root directory web server (c:\xampp\htdocs)
 
 ![Screenshot (504)](https://github.com/rniarzz/Lab8web/assets/115542704/481928db-131a-41ef-8b12-d6aef12dc421)
 
@@ -73,8 +73,8 @@ VALUES ('Elektronik', 'HP Samsung Android', 'hp_samsung.jpg', 2000000, 2400000, 
 
 ![Screenshot (467)](https://github.com/rniarzz/Lab8web/assets/115542704/94fb42cc-f5db-4d58-b54c-68e555880cda)
 
-### Membuat file koneksi database
-## Buat file baru dengan nama ```koneksi.php```
+## Membuat file koneksi database
+### Buat file baru dengan nama ```koneksi.php```
 
 ```php
 <?php
@@ -90,12 +90,12 @@ if ($conn == false)
 } #else echo "Koneksi berhasil";
 ?>
 ```
-## Buka melalui browser untuk menguji koneksi database untuk menyampilkan pesan koneksi berhasil, uncomment pada perintah ```echo “koneksi berhasil”;```
+### Buka melalui browser untuk menguji koneksi database untuk menyampilkan pesan koneksi berhasil, uncomment pada perintah ```echo “koneksi berhasil”;```
 
 ![Screenshot (495)](https://github.com/rniarzz/Lab8web/assets/115542704/c9772bfe-40ab-4152-a665-9a839c257bfd)
 
-### Membuat file index untuk menampilkan data (Read)
-## Buat file baru dengan nama ```index.php```
+## Membuat file index untuk menampilkan data (Read)
+### Buat file baru dengan nama ```index.php```
 
 ```php
 <?php
@@ -155,8 +155,8 @@ $result = mysqli_query($conn, $sql);
 ```
 ![Screenshot (496)](https://github.com/rniarzz/Lab8web/assets/115542704/e0c8b3c5-375e-4052-a698-03784a3a4e2a)
 
-### Menambah Data (Create)
-## Buat file baru dengan nama ```tambah.php```
+## Menambah Data (Create)
+### Buat file baru dengan nama ```tambah.php```
 
 ```php
 <?php
@@ -218,8 +218,8 @@ $result = mysqli_query($conn, $sql);
 ```
 ![Screenshot (498)](https://github.com/rniarzz/Lab8web/assets/115542704/7110d3fa-f7e8-4506-ba71-5f10d5eff6c9)
 
-### Mengubah Data (Update)
-## Buat file baru dengan nama ```ubah.php```
+## Mengubah Data (Update)
+### Buat file baru dengan nama ```ubah.php```
 
 ```php
 <?php
@@ -330,8 +330,8 @@ $data['id_barang'];?>" />
 ```
 ![Screenshot (499)](https://github.com/rniarzz/Lab8web/assets/115542704/ef1bd147-af11-4fad-942f-5d728d801ffa)
 
-### Menghapus Data (Delete)
-#### Buat file baru dengan nama ```hapus.php```
+## Menghapus Data (Delete)
+### Buat file baru dengan nama ```hapus.php```
 
 ```php
 <?php
